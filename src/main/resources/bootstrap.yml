@@ -4,6 +4,7 @@ spring:
   cloud:
    consul:
       discovery:
+        enabled: true
         healthCheckUrl: http://consul-demo-git-griffin.2886795286-80-elsy07.environments.katacoda.com/actuator/health
         healthCheckInterval: 15s
         instanceId: ${spring.application.name}
