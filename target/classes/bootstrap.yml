@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: employee
+  cloud:
+   consul:
+      discovery:
+        instanceId: ${spring.application.name}
+      host: 34.68.33.63
+      port: 80
+      config:
+        format: YAML
+        data-key: data
+        enabled: true
+        watch:
+           enabled: true
+           delay: 10
+
+   

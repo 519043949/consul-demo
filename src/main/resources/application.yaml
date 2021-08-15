@@ -1,0 +1,7 @@
+uaa:
+  server:
+   host: ${uaa.server.host}
+management:
+   endpoint:
+      health:
+         enabled: true
